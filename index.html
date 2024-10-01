@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Time Converter</h1>
+        <p id="description" >
+            "This can convert time between the 12-hour clock format and the 24-hour clock format, and vice versa."
+            <span id="more-text" style="display: none;">"The 12-hour format uses 'AM' and 'PM' to differentiate between morning and evening, while the 24-hour format runs continuously from 00 to 23 hours without using 'AM' or 'PM'."</span>   
+        </p>
+        <a href="javascript:void(0);" id="read-more" onclick="toggleText()">Read More</a>
+        <input type="text" placeholder="HH:MM AM/PM or HH:MM (Enter time)" id="time-input">
+        <button onclick="convertTime()">Convert</button> <br>
+        <span id="result" class="display-box" style="display: none;"></span> <!-- Result span -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
